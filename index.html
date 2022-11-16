@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iChat - Realtime Node Socket.io Chat App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&family=Roboto+Slab:wght@900&display=swap"
+    rel="stylesheet">
+  <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+  <!-- server and client are joined using the above command -->
+
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+  <nav>
+    <!-- <img class="logo" src="icon.png" alt="logo" /> -->
+    <h1>Social-Bay</h1>
+  </nav>
+  <div class="container">
+    <!-- <div class="message right">Chirag: Hey how are you?</div>
+      <div class="message left">Saksham: Yo! I am fine</div> -->
+  </div>
+
+  <div class="send">
+    <form action="#" id="send-container">
+      <input type="text" name="messageInp" id="messageInp" />
+      <button class="btn" type="submit">Send</button>
+      <div class="dropdown">
+        <select name="Send Private" id="select1" class="dropbtn">
+          <option value="BroadCast">BroadCast</option>
+        </select>
+        <!-- </div> -->
+      </div>
+    </form>
+    <form enctype="multipart/form-data" id="form">
+      <input type="file" title="uploader" name="img" />
+      <button id="btn2" type="submit">Send file</button>
+    </form>
+  </div>
+  <!-- <div id="UploadBox">
+      <h2>Video Uploader</h2>
+      <span id="UploadArea">
+        <label for="FileBox">Choose A File: </label>
+        <input type="file" id="FileBox" /><br />
+        <label for="NameBox">Name: </label>
+        <input type="text" id="NameBox" /><br />
+        <button type="button" id="UploadButton" class="Button">Upload</button>
+      </span>vipin
+    </div> -->
+  <script defer src="js/client.js"></script>
+  </div>
+</body>
+
+</html>
